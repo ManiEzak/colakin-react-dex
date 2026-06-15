@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+        :root {
+            --primary-gradient: linear-gradient(90deg, #8B5CF6 0%, #EC4899 50%, #3B82F6 100%);
+            --page-bg: linear-gradient(135deg, #F5F3FF 0%, #EEF2FF 50%, #FCE7F3 100%)
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--page-bg);
+            color: #1F2937;
+            margin: 0;
+            overflow-x: hidden
+        }
+
+        .font-plus {
+            font-family: 'Plus Jakarta Sans', sans-serif
+        }
+
+        .bg-primary-gradient {
+            background: var(--primary-gradient)
+        }
+
+        .text-gradient {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
+
+        .dotted-grid {
+            background-image: radial-gradient(#C4B5FD 1.5px, transparent 1.5px);
+            background-size: 36px 36px;
+            opacity: 1
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4)
+        }
+
+        .hero-pipeline-glass {
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.5)
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-20px)
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite
+        }
+
+* {
+  box-sizing: border-box;
+}
